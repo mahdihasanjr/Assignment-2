@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@font-face {
+    font-family: italic-font;
+    src: url("../font/miama/Miama.ttf");
+}
+                
+
+/* Shared styles */
+body{
+    /* background-color: rgba(0, 0, 0,1); */
+   
+}
+
+/* font-family related */
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: auto;
+  font-style: normal;
+}
+
+
+/* button related styles */
+.btn-primary{
+    font-size: 1rem;
+    font-weight: 600;
+    color:#FFFFFF;
+    background-color: orangered;
+    padding:1rem 2rem;
+    border:none;
+    border-radius: 2.75rem;
+}
+.btn-secondary{
+    font-size: 1rem;
+    font-weight: 600;
+    color:#FFFFFF;
+    background-color: black;
+    padding:1rem 2rem;
+    border:1px solid white;
+    border-radius: 2.75rem;
+    margin-left: 0.8rem;
+}
+/* shared styles end */
+body{
+     max-width: 1440px;
+     color:white;
+     margin:0;
+     padding: 0;
+}
+header{
+   background: linear-gradient(180.00deg,rgba(17, 17, 17, 1) 10%,rgb(37, 35, 35) 100%);
+}
+/* nav related styles */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2.5rem 10.25rem 1.5rem 10rem;
+}
+.nav-brand-name{
+    color:rgba(230, 83, 60, 1);
+    font-style: italic;
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin:0;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding-left: 0;
+    border:1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2.4rem;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 3rem;
+}
+.nav-link{
+    text-decoration: none;
+    color:#FFFFFF;
+    font-weight: 400;
+}
+.nav-btn{
+    font-size: 1rem;
+    font-weight: 600;
+    color:#FFFFFF;
+    background-color:rgba(230, 83, 60, 1);
+    padding:0.5rem 1.25rem;
+    border:none;
+    border-radius: 2.75rem;
+}
+
+
+/* banner related styles */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 11.25rem 0 10rem;
+
+}
+.banner-title{
+    font-size: 4.5rem;
+    margin-bottom: 0;
+}
+#banner-title{
+    font-family: italic-font;
+    font-size: 10rem;
+    font-weight: 500;
+    line-height: 0;
+}
+.banner-description{
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin:1.75rem 0;
+}
+
+.img-btn-1{
+    background-color: rgba(48, 48, 48, 0.54);
+    padding: 0.8rem 1.5rem;
+    color:rgba(239, 237, 232, 0.65);
+    border:none;
+    border-radius:0.8rem;
+    position: absolute;
+    top: 540px;
+    right: 440px;
+}
+#video-icon{
+    color:rgba(230, 83, 60, 1);
+    
+}
+#three-fifty{
+    color:rgba(250, 250, 249, 1);
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin:0;
+}
+#video-tutorial{
+    color:rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+    margin:0;
+    letter-spacing: 0.5px;
+}
+ 
+
+.img-btn-2{
+    background-color: rgba(81, 80, 80, 0.54);
+    border:none;
+    border-radius: 0.8rem;
+    padding: 1rem 1.25rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color:rgba(250, 250, 249, 1);
+    position: absolute;
+    top: 225px;
+    right: 135px;
+    
+}
+#five-hundred{
+    margin: 0;
+    line-height: 50px;
+    text-align: left;
+}
+#free-workout{
+    font-size: 0.8rem;
+    color:rgba(241, 236, 225, 0.65);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin:0;
+    text-align: left;
+   
+}
+
+/* hide design for desktop or show for phone */
+    .navbar-secondary{
+        display: none;
+        opacity: 0;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem;
+    }
+    .navbar-secondary h4{
+        color:rgba(230, 83, 60, 1);
+        font-style: italic;
+        font-size: 2rem;
+        font-weight: 700;
+        margin:0;
+    }
+    .navbar-secondary a{
+        color:#FFFFFF;
+        font-size: 1.5rem;
+    }
+
+/* Responsive Media query for smaller devices */
+
+@media screen and (max-width:576.36px ) {
+    .navbar{
+        display: none;
+        opacity: 0;
+    }
+    .navbar-secondary{
+        display: flex;
+        opacity: 1;
+    }
+    .banner{
+        flex-direction: column;
+        padding:1.25rem;
+    }
+    .banner-title{
+        font-size: 3rem;
+        /* line-height: rem; */
+    }
+    #banner-title{
+        font-size: 6rem;
+    }
+    .btn-primary,.btn-secondary{
+        padding:0.7rem 1rem;
+       font-size: 0.8rem;
+    }
+    .img-btn-1{
+        right:300px;
+        top:740px;
+    }
+    .img-btn-2{
+        right: 32px;
+        top:672px;
+    }
+}
+
+/* Responsive media query for tablet */
+@media screen and (min-width:576.37px) and (max-width:992px) {
+    .navbar{
+        padding: 3rem 1.8rem;
+    }
+    .nav-item{
+        margin-right: 1.5rem;
+    }
+    .banner{
+        flex-direction: column;
+        padding:4rem 5rem 0rem;
+    }
+    .img-btn-1{
+        top:1060px;
+        right: 380px;
+    }
+    .img-btn-2{
+        top:740px;
+        right:155px ;
+    }
+}
