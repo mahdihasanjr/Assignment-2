@@ -11,6 +11,8 @@
 /* Shared styles */
 body{
     /* background-color: rgba(0, 0, 0,1); */
+    margin:0;
+    padding: 0;
    
 }
 
@@ -42,6 +44,22 @@ body{
     border:1px solid white;
     border-radius: 2.75rem;
     margin-left: 0.8rem;
+}
+/* section-shared styles */
+.section-title{
+    font-size: 3rem;
+    font-weight: 900;
+    color:#FFFFFF;
+    margin: 0;
+}
+.section-description{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.5);
+    line-height: 1.5rem;
+    letter-spacing: 0.3px;
+    margin-top: 0.8rem;
+    margin-bottom: 3.5rem;
 }
 /* shared styles end */
 body{
@@ -179,6 +197,56 @@ header{
    
 }
 
+
+/* article related styles */
+article{
+    max-width: 1060px;
+    margin:6rem auto;
+    background-color:black;
+}
+
+
+/* section related styles */
+section{
+    margin:5rem auto;
+}
+
+/* habits related styles */
+.habits{
+    text-align: center;
+}
+.habits-img{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2.5rem;
+}
+ .img-shape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+ }
+.round-img{
+    border:3px solid rgb(37, 36, 36);
+    border-radius: 50%;
+}
+
+.shape-title{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color:#FFFFFF;
+    margin-top: 1.8rem;
+    margin-bottom: 0.4rem;
+}
+.shape-description{
+    color:rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 1.125rem;
+    margin:0 auto;
+}
 /* hide design for desktop or show for phone */
     .navbar-secondary{
         display: none;
@@ -199,6 +267,9 @@ header{
         color:#FFFFFF;
         font-size: 1.5rem;
     }
+
+
+
 
 /* Responsive Media query for smaller devices */
 
@@ -234,6 +305,12 @@ header{
         right: 32px;
         top:672px;
     }
+
+
+    /* section related styles */
+    .habits-img{
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Responsive media query for tablet */
@@ -255,5 +332,12 @@ header{
     .img-btn-2{
         top:740px;
         right:155px ;
+    }
+
+
+    /* section relates styles */
+    .habits-img{
+        grid-template-columns: repeat(2,1fr);
+       
     }
 }
