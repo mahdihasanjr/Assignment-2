@@ -337,6 +337,7 @@ section{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .bmi-content{
    display: flex;
@@ -345,20 +346,17 @@ section{
    align-items: center;
    
 }
-.bmi-column-1{
-    width:310px;
-}
+
 
 .bmi-chart-box{
-    max-width: 1060px;
+    max-width: 100%;
     padding: 3.25rem 8rem;
     background-color: rgba(34, 34, 34, 1);
     /* display: grid; */
     /* grid-template-columns: 310px 1fr; */
-    gap:11.5rem;
     display: flex;
+    gap:4.5rem;
     
-    /* justify-content: center; */
 }
 
 .bmi-column-title{
@@ -369,7 +367,7 @@ section{
     
 }
 .chart-list{
-    width:auto;
+    width: 310px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     margin-top: 3.25rem;
@@ -391,10 +389,18 @@ section{
 }
 
 /* second column code */
+.bmi-column-2{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
 .form{
     display: flex;
     flex-direction: column;
     gap: 0.75em;
+    justify-items: center;
+    
 }
 .input-container{
     display: grid;
@@ -402,11 +408,13 @@ section{
     gap: 0.75em;
 }
 .form input{
+    width: 100%;
     color:rgba(255, 255, 255, 0.6);
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 0.5rem;
     padding: 0.75rem 0 0.75rem 1.25rem;
     border:none;
+    box-sizing: border-box;
 }
 .chart-btn{
     margin-top: 2rem;
@@ -588,6 +596,11 @@ section{
         flex-direction: column;
         padding: 2rem 1.25rem;
         gap:3rem;
+        box-sizing: border-box;
+        
+    }
+    .bmi-column-title{
+        width:auto;
     }
     .bmi-content{
         padding: 0 1.25rem;
@@ -604,6 +617,9 @@ section{
 
     .meet-img-container{
         grid-template-columns: 1fr;
+    }
+    .meet-img img{
+        height:auto;
     }
 }
 
@@ -656,6 +672,9 @@ section{
         flex-direction: column;
         padding: 2rem 1.25rem;
         gap:3rem;
+    }
+    .bmi-column-title{
+        width:auto;
     }
     .bmi-content{
         padding: 0 1.25rem;
