@@ -34,6 +34,7 @@ body{
     padding:1rem 2rem;
     border:none;
     border-radius: 2.75rem;
+
 }
 .btn-secondary{
     font-size: 1rem;
@@ -63,7 +64,7 @@ body{
 }
 /* shared styles end */
 body{
-     max-width: 1440px;
+     width:100%;
      color:white;
      margin:0;
      padding: 0;
@@ -121,6 +122,7 @@ header{
     justify-content: space-between;
     padding: 0 11.25rem 0 10rem;
     margin: 0;
+    
 
 }
 .banner-title{
@@ -140,19 +142,33 @@ header{
     line-height: 1.5rem;
     margin:1.75rem 0;
 }
+.banner-img-content{
+    position: relative;
+    
+}
+.banner-img img{
+    width: auto;
+    height:auto;
+}
+
 
 .img-btn-1{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
     background-color: rgba(48, 48, 48, 0.54);
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 1.5rem;
     color:rgba(239, 237, 232, 0.65);
     border:none;
     border-radius:0.8rem;
     position: absolute;
-    top: 540px;
-    right: 440px;
+    bottom: 10%;
+    left:-30%;
+    
 }
 #video-icon{
     color:rgba(230, 83, 60, 1);
+    font-size: 2.5rem;
     
 }
 #three-fifty{
@@ -180,8 +196,8 @@ header{
     font-weight: 800;
     color:rgba(250, 250, 249, 1);
     position: absolute;
-    top: 225px;
-    right: 135px;
+    bottom: 60%;
+    right:-15%;
     
 }
 #five-hundred{
@@ -202,7 +218,7 @@ header{
 
 /* article related styles */
 article{
-    max-width: 1060px;
+    max-width: 75%;
     margin:5rem auto;
    
 }
@@ -561,15 +577,15 @@ footer{
     }
     .btn-primary,.btn-secondary{
         padding:0.7rem 1rem;
-       font-size: 0.8rem;
+        font-size: 0.8rem;
     }
     .img-btn-1{
-        right:220px;
-        top:840px;
+        bottom: 40%;
+        left:5%;
     }
     .img-btn-2{
-        right: 32px;
-        top:672px;
+        bottom: 75%;
+        right: 0%;
     }
 
 
@@ -698,15 +714,16 @@ footer{
     }
     .banner{
         flex-direction: column;
+        align-items: center;
         padding:4rem 5rem 0rem;
     }
     .img-btn-1{
-        top:1060px;
-        right: 380px;
+        bottom: 25%;
+        left:-12%;
     }
     .img-btn-2{
-        top:740px;
-        right:155px ;
+        bottom: 70%;
+        right:0%;
     }
 
 
